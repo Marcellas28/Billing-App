@@ -1,0 +1,72 @@
+.print-button-container {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.print-btn,
+.backend-btn {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.print-btn {
+    background: #17a2b8;
+    color: white;
+}
+
+.print-btn:hover:not(:disabled) {
+    background: #138496;
+    transform: translateY(-2px);
+}
+
+.backend-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.backend-btn:hover:not(:disabled) {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.print-btn:disabled,
+.backend-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.receipt-debug {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.receipt-debug summary {
+    cursor: pointer;
+    padding: 5px;
+    background: #e9ecef;
+    border-radius: 4px;
+}
+
+.receipt-text-preview {
+    background: #2d3748;
+    color: #e2e8f0;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow-y: auto;
+}
